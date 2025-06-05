@@ -1,0 +1,51 @@
+{
+	"name": "next-query-string",
+	"version": "1.0.0",
+	"description": "A simple client-side React hook for easier management of query strings in Next.js",
+	"scripts": {
+		"check": "tsc",
+		"types": "tsc --declaration --emitDeclarationOnly --outdir dist",
+		"build": "tsc --noEmit && tsc --declaration --emitDeclarationOnly --outdir dist && esbuild --platform=node src/index.ts --minify --format=esm --outfile=dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MarshMaxine/NextQueryBuilder.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MarshMaxine/NextQueryBuilder/issues"
+	},
+	"homepage": "https://github.com/MarshMaxine/NextQueryBuilder#readme",
+	"author": {
+		"name": "Maxine Marsh",
+		"url": "https://maxinemarsh.me"
+	},
+	"license": "MIT",
+	"type": "module",
+	"types" : "dist/index.d.ts",
+	"main" : "dist/index.js",
+	"files": [
+		"dist/"
+	],
+	"keywords" : [
+		"nextjs",
+		"react",
+		"query-param",
+		"hook"
+	],
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^28.0.3",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-typescript": "^12.1.2",
+		"babel-core": "^6.26.3",
+		"babel-runtime": "^6.26.0",
+		"esbuild": "^0.25.5",
+		"next": "^15.3.3",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"rollup": "^4.41.1",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-sass": "^1.15.2",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"typescript": "^5.0"
+	}
+}
